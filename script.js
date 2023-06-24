@@ -19,6 +19,9 @@ decInp.addEventListener("input", () => {
         hexInp.value = "";
         errorMsg.textContent = "";
     } else {
+        binInp.value = "";
+        octInp.value = "";
+        hexInp.value = "";
         errorMsg.textContent = "Invalid Decimal Input";
     }
   });
@@ -32,8 +35,14 @@ decInp.addEventListener("input", () => {
         hexInp.value = parseInt(binValue, 2).toString(16);
         errorMsg.textContent = "";
     } else if (binInp.value === "") {
+        decInp.value = "";
+        octInp.value = "";
+        hexInp.value = "";
         errorMsg.textContent = "";
     } else {
+        decInp.value = "";
+        octInp.value = "";
+        hexInp.value = "";
         errorMsg.textContent = "Invalid Binary Input";
     }
   });
@@ -47,8 +56,14 @@ decInp.addEventListener("input", () => {
         hexInp.value = parseInt(octValue, 8).toString(16);
         errorMsg.textContent = "";
     } else if (octInp.value === "") {
+        decInp.value = "";
+        binInp.value = "";
+        hexInp.value = "";
         errorMsg.textContent = "";
     } else {
+        decInp.value = "";
+        binInp.value = "";
+        hexInp.value = "";
         errorMsg.textContent = "Invalid Octal Input";
     }
   });
@@ -62,8 +77,14 @@ decInp.addEventListener("input", () => {
         octInp.value = parseInt(hexValue, 16).toString(8);
         errorMsg.textContent = "";
     } else if (hexInp.value === "") {
+        decInp.value = "";
+        binInp.value = "";
+        octInp.value = "";
         errorMsg.textContent = "";
     } else {
+        decInp.value = "";
+        binInp.value = "";
+        octInp.value = "";
         errorMsg.textContent = "Invalid Hexadecimal Input";
     }
   });
