@@ -1,0 +1,90 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #282a36;
+    --box: #1e212b;
+    --white: #f8f8f2;
+    --blue: #6272a4;
+    --cyan: #8be9fd;
+    --green: #50fa7b;
+    --orange: #ffb86c;
+    --pink: #ff79c6;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --yellow: #f1fa8c;
+}
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Fira Code", monospace;
+    font-size: larger;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    border-radius: 20px;
+    color: var(--white);
+    background-color: var(--box);
+    box-shadow: 0 0 30px rgb(98, 114, 164);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    height: 120px;
+    width: 200px;
+    gap: 1rem;
+}
+
+.input-wrapper input[type="text"] {
+    background-color: var(--background);
+    color: rgb(181, 184, 194, 0.7);
+    border: none;
+    outline: none;
+    padding: 0.6rem;
+    text-align: center;
+    width: 90%;
+    border-radius: 10px;
+    font-family: "Fira Code", monospace;
+    font-size: large;
+}
+
+#error-msg {
+    color: var(--red);
+    font-style: italic;
+}
+.input-wrapper label[for="dec-inp"] {
+    color: var(--cyan);
+}
+.input-wrapper label[for="bin-inp"] {
+    color: var(--green);
+}
+.input-wrapper label[for="oct-inp"] {
+    color: var(--orange);
+}
+.input-wrapper label[for="hex-inp"] {
+    color: var(--pink);
+}
